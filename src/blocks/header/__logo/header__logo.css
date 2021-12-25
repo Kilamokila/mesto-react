@@ -1,0 +1,17 @@
+.header__logo {
+    background-image: url(../../../images/Mesto.svg);
+    width: 142px;
+    height: 33px;
+    background-size: cover;
+    margin-bottom: 41px;
+}
+
+@media screen and (max-width: 490px) {
+    .header__logo {
+        margin-left: 27px;
+        width: 104px;
+        height: 24px;
+        margin-bottom: 31px;
+        align-self: center;
+    }
+  } 
