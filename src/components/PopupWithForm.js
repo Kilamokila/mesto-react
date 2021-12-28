@@ -12,7 +12,7 @@ function PopupWithForm({ isOpen, id, title, onClose, formId, children }) {
                         className="popup__form"
                         method="GET"
                         id={formId}
-                        novalidate
+                        noValidate
                     >
                         {children}
                     </form>
