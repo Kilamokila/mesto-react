@@ -34,6 +34,7 @@
 @import url(./blocks/elements/__card-image-container/elements__card-image-container.css);
 @import url(./blocks/elements/__card-image/elements__card-image.css);
 @import url(./blocks/elements/__delete-button/elements__delete-button.css);
+@import url(./blocks/elements/__delete-button/_hidden/elements__delete-button_hidden.css);
 @import url(./blocks/elements/__card-description/elements__card-description.css);
 @import url(./blocks/elements/__place-name/elements__place-name.css);
 @import url(./blocks/elements/__like/elements__like.css);
