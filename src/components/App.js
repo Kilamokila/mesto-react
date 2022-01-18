@@ -23,17 +23,13 @@ function App() {
 
 
   useEffect(() => {
-    api.getCardsData()
-      .then(cardsData => setCards(cardsData))
+    Promise.all([api.getCardsData(), api.getUserData()])
+      .then(([cardsData, userData]) => {
+        setCards(cardsData)
+        setCurrentUser(userData)
+      })
       .catch(err => console.log(err))
   }, [])
-
-  useEffect(() => {
-    api.getUserData()
-      .then(userData => setCurrentUser(userData))
-      .catch(err => console.log(err))
-  }, [])
-
 
   function handleEditAvatarClick() {
     setEditAvatarPopupOpen(true)

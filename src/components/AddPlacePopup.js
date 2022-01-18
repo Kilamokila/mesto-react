@@ -3,8 +3,8 @@ import PopupWithForm from "./PopupWithForm";
 
 function AddPlacePopup({ isOpen, onClose, onCardData }) {
 
-    const [cardName, setCardName] = React.useState();
-    const [cardLink, setCardLink] = React.useState();
+    const [cardName, setCardName] = React.useState('');
+    const [cardLink, setCardLink] = React.useState('');
 
     function handleSetCardName(e) {
         setCardName(e.target.value)

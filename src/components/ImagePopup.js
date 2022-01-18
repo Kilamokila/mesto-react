@@ -10,9 +10,9 @@ function ImagePopup({ currentCard, isOpen, onClose }) {
                 <button className="popup__container-exit-button" type="button" onClick={onClose}></button>
                 <img
                     src={link ? link : ""}
-                    alt={name}
+                    alt={name ? name : ""}
                     className="popup__fullsize-photo" />
-                <figcaption className="popup__photo-title">{name}</figcaption>
+                <figcaption className="popup__photo-title">{name ? name : ""}</figcaption>
             </figure>
         </div>
     )

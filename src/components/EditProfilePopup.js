@@ -4,8 +4,8 @@ import PopupWithForm from "./PopupWithForm";
 
 function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
 
-    const [name, setName] = React.useState();
-    const [description, setDescription] = React.useState();
+    const [name, setName] = React.useState('');
+    const [description, setDescription] = React.useState('');
 
     function handleChangeName(e) {
         setName(e.target.value)
@@ -42,7 +42,7 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
                     minLength="2"
                     maxLength="40"
                     onChange={handleChangeName}
-                    value={name} />
+                    value={name || ""} />
                 <span className="name-input-error"></span>
                 <input
                     name="about"
@@ -53,7 +53,7 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
                     minLength="2"
                     maxLength="200"
                     onChange={handleChangeDescription}
-                    value={description} />
+                    value={description || ""} />
                 <span className="description-input-error"></span>
                 <button className="popup__button" type="submit">Сохранить</button>
             </fieldset>

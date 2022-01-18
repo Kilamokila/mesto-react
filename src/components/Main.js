@@ -23,7 +23,8 @@ function Main({ cards, onEditAvatar, onEditProfile, onAddPlace, onCardClick, onC
             </section>
             <section className="elements">
                 {cards.map((card) =>
-                    <Card card={card}
+                    <Card
+                        card={card}
                         name={card.name}
                         link={card.link}
                         likes={card.likes.length}
